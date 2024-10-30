@@ -1,0 +1,107 @@
+/* Global Styles */
+body {
+  background-color: #F0C97B;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 36px;
+  color: #000;
+}
+
+h2, h3 {
+  color: #b98929;
+}
+
+a {
+  color: #d84c00;
+}
+
+ul {
+  list-style-type: circle;
+  padding: 5px;
+}
+
+ul li {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.container {
+  text-align: center;
+  padding: 50px;
+}
+
+#intro {
+  background-image: url("images/Concretegridyellow.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Spotrun Marquee */
+.spotrun {
+  background: #000;
+  color: #e8e2d1;
+  padding: 9px 0;
+  overflow: hidden;
+  font-size: 30px;
+  line-height: 32px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.spotrun__frame {
+  display: flex;
+  overflow: hidden;
+}
+
+.js-marquee-wrapper {
+  display: flex;
+  animation: marqueeAnimation-6537583 60s linear infinite;
+}
+
+.spotrun__item {
+  margin-left: 24px;
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+@keyframes marqueeAnimation-6537583 {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Skills Section */
+.skills-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  width: 100%;
+  color: #b98929;
+}
+
+.skills-section div {
+  width: 30%;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .skills-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-section div {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+}
